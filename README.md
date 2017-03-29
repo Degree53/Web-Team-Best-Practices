@@ -39,6 +39,7 @@ We follow the Microsoft C# Coding and Naming Conventions. Take a look, and ADHER
 
 * [Coding Conventions](https://msdn.microsoft.com/en-gb/library/ff926074.aspx)
 * [Naming Conventions](https://msdn.microsoft.com/en-us/library/ms229045(v=vs.110).aspx)
+* Version Numbers
 
 ## Umbraco
 
@@ -100,6 +101,8 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 * [Git Workflow](https://sites.google.com/a/degree53.com/knowledge-base/technical/front-end/git-workflow)
 * TeamCity
     * Errors - Read build log errors. They are your best friend when trying to resolve build issues.
+    * Version Numbers
+    * Release Tags
 
 ## Hosting
 
