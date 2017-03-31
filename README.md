@@ -16,6 +16,7 @@
 10. [Code Reviews](#code-reviews)
 11. [Continuous Integration](#continuous-integration)
 12. [Hosting](#hosting)
+12. [Tools](#tools)
 
 ## HTML
 
@@ -53,10 +54,10 @@ Generally we try to keep the same structure for all of our projects where possib
 * Custom Property Editors
 * Custom Grid Editors
 * Controllers - Use appropriately.
-    * RenderViewController
-    * SurfaceController
-    * UmbracoApiController
-    * UmbracoAuthorizedApiController
+    * [RenderViewController](https://our.umbraco.org/documentation/reference/routing/custom-controllers)
+    * [SurfaceController](https://our.umbraco.org/documentation/reference/routing/surface-controllers)
+    * [UmbracoApiController](https://our.umbraco.org/documentation/reference/routing/WebApi/)
+    * [UmbracoAuthorizedApiController](https://our.umbraco.org/documentation/reference/routing/Authorized/)
 * [ORM](http://www.toptensoftware.com/petapoco/) - There is an ORM built into Umbraco, PetaPoco. Sometimes this may be easier than creating new tables and writing custom code for CRUD operations, but be aware of any performance hits.
 
 ## SQL
@@ -107,3 +108,8 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 ## Hosting
 
 * Azure - Log into the [Portal](http://portal.azure.com) using your own Degree 53 account. It should be setup with the correct permissions to access what you need. If you don't have the correct permissions, see Bav.
+
+## Tools
+
+* [https://search.google.com/search-console/mobile-friendly](https://search.google.com/search-console/mobile-friendly)
+* Visual Studio Productivity Power Tools - Install this and it will make your life easier. More importantly, it can enforce tabs/spaces, and few other things in your code.
