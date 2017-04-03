@@ -16,7 +16,8 @@
 10. [Code Reviews](#code-reviews)
 11. [Continuous Integration](#continuous-integration)
 12. [Hosting](#hosting)
-12. [Tools](#tools)
+13. [Tools](#tools)
+14. [Tracking](#tracking)
 
 ## HTML
 
@@ -121,3 +122,9 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 * Visual Studio Productivity Power Tools - Install this and it will make your life easier. More importantly, it can enforce tabs/spaces, and few other things in your code.
 * [SQL Server Migration Wizard](https://blogs.msdn.microsoft.com/prasanna/2015/04/13/migrating-sql-server-on-premise-db-to-sql-azure-using-sql-server-migration-wizard/) - Invaluable when migrating databases between environments, handling issues like DB versions with ease.
     * [Download](https://sqlazuremw.codeplex.com/releases/view/32334)
+
+## Tracking
+
+* Google Tag Manager - Ideally we should add Google Analytics via Google Tag Manager. It means, we only need to install GTM, and things can be added when required.
+    * https://support.google.com/analytics/answer/6164470
+* Google Analytics
