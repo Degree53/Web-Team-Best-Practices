@@ -11,13 +11,14 @@
 5. [Umbraco](#umbraco)
 6. [SQL](#sql)
 7. [Domain Urls](#domain-urls)
-8. [Postman](#postman)
-9. [Logging](#logging)
-10. [Code Reviews](#code-reviews)
-11. [Continuous Integration](#continuous-integration)
-12. [Hosting](#hosting)
-13. [Tools](#tools)
-14. [Tracking](#tracking)
+8. [Email](#email)
+9. [Postman](#postman)
+10. [Logging](#logging)
+11. [Code Reviews](#code-reviews)
+12. [Continuous Integration](#continuous-integration)
+13. [Hosting](#hosting)
+14. [Tools](#tools)
+15. [Tracking](#tracking)
 
 ## HTML
 
@@ -85,6 +86,10 @@ Setting URL's is good practice. If we didn't do it, we'd have issues for example
     * Test - http://{sitename-lowercase-hyphenated}-test.degree53.com
     * UAT - http://{sitename-lowercase-hyphenated}-uat.degree53.com
 
+## Email
+
+* Sendgrid - We have a Degree 53 account that you can use to send emails in your code using SendGrid. If not using sendgrid, you can either use smtp4dev locally.
+
 ## Postman
 
 * Shared Degree 53 Dev Account (*degreefiftythree.dev@gmail.com*, see LastPass)
@@ -125,6 +130,6 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 
 ## Tracking
 
-* Google Tag Manager - Ideally we should add Google Analytics via Google Tag Manager. It means, we only need to install GTM, and things can be added when required.
+* Google Tag Manager - Ideally we should add Google Analytics via Google Tag Manager. It means, we only need to install GTM, and things can be added when required, without affecting development.
     * https://support.google.com/analytics/answer/6164470
 * Google Analytics
