@@ -20,7 +20,8 @@
 
 ## HTML
 
-* Semantics
+* Semantics - We should be aware of the semantics, using elements appropriately. It's important, and there isn't any reason why we shouldn't know about them. Have a google yourself, below is an article that may be of us to you.
+    * [https://codepen.io/mi-lee/post/an-overview-of-html5-semantics](https://codepen.io/mi-lee/post/an-overview-of-html5-semantics)
 
 ## CSS
 
@@ -40,7 +41,7 @@ We follow the Microsoft C# Coding and Naming Conventions. Take a look, and ADHER
 
 * [Coding Conventions](https://msdn.microsoft.com/en-gb/library/ff926074.aspx)
 * [Naming Conventions](https://msdn.microsoft.com/en-us/library/ms229045(v=vs.110).aspx)
-* Version Numbers
+* Version Numbers - *TBC*
 
 ## Umbraco
 
@@ -51,18 +52,23 @@ Generally we try to keep the same structure for all of our projects where possib
     * LastPass - Make logins for different environments as soon as they are setup, even if they share the same password.
 * Ensure you have the [Middleware Nuget repo](https://sites.google.com/a/degree53.com/knowledge-base/technical/middleware/nuget-repository) added to your Visual Studio
 * [Editors Manual](https://our.umbraco.org/projects/website-utilities/umbraco-7-editors-manual/) - The Umbraco manual. Usually, this is a starting point to modify and customise for any clients. See a project manager for any sample/custom ones we have produced.
-* Custom Property Editors
-* Custom Grid Editors
+* [Common Pitfalls](https://our.umbraco.org/documentation/Reference/Common-Pitfalls/) - The Umbraco docs are pretty good in general, this article is pretty good for some general tips and best practices.
 * Controllers - Use appropriately.
     * [RenderViewController](https://our.umbraco.org/documentation/reference/routing/custom-controllers)
     * [SurfaceController](https://our.umbraco.org/documentation/reference/routing/surface-controllers)
     * [UmbracoApiController](https://our.umbraco.org/documentation/reference/routing/WebApi/)
     * [UmbracoAuthorizedApiController](https://our.umbraco.org/documentation/reference/routing/Authorized/)
+* Custom Property Editors
+* Custom Grid Editors
+* Custom Sections
+    * [http://skrift.io/articles/archive/sections-and-trees-in-umbraco-7/](http://skrift.io/articles/archive/sections-and-trees-in-umbraco-7/)
 * [ORM](http://www.toptensoftware.com/petapoco/) - There is an ORM built into Umbraco, PetaPoco. Sometimes this may be easier than creating new tables and writing custom code for CRUD operations, but be aware of any performance hits.
 
 ## SQL
 
 > For your information
+
+For each database/site you are building a database for in Azure, [create an individual account with the required permissions](https://sites.google.com/a/degree53.com/knowledge-base/it-helpdesk/sql-azure). Do NOT use the master account to connect to the database, either for the website, or in SQL Server Management Studio. Too much can go wrong.
 
 * Naming Conventions for DB's
     * Dev - {PascalCaseSitename}Dev
@@ -81,7 +87,7 @@ Setting URL's is good practice. If we didn't do it, we'd have issues for example
 ## Postman
 
 * Shared Degree 53 Dev Account (*degreefiftythree.dev@gmail.com*, see LastPass)
-* There should be environament variables that you can use to switch between different environments, eg. {{dev}}, {{test}}, {{UAT}}. Use these when adding any API calls.
+* There should be environament variables that you can use to switch between different environments, eg. {{dev}}, {{test}}, {{uat}}. Use these when adding any API calls.
 
 ## Logging
 
@@ -100,7 +106,7 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 ## Continuous Integration
 
 * [Git Workflow](https://sites.google.com/a/degree53.com/knowledge-base/technical/front-end/git-workflow)
-* TeamCity
+* [TeamCity](https://sites.google.com/a/degree53.com/knowledge-base/technical/continous-integration/teamcity)
     * Errors - Read build log errors. They are your best friend when trying to resolve build issues.
     * Version Numbers
     * Release Tags
@@ -113,3 +119,5 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 
 * [https://search.google.com/search-console/mobile-friendly](https://search.google.com/search-console/mobile-friendly)
 * Visual Studio Productivity Power Tools - Install this and it will make your life easier. More importantly, it can enforce tabs/spaces, and few other things in your code.
+* [SQL Server Migration Wizard](https://blogs.msdn.microsoft.com/prasanna/2015/04/13/migrating-sql-server-on-premise-db-to-sql-azure-using-sql-server-migration-wizard/) - Invaluable when migrating databases between environments, handling issues like DB versions with ease.
+    * [Download](https://sqlazuremw.codeplex.com/releases/view/32334)
