@@ -4,21 +4,26 @@
 
 ## Table of Contents
 
-1. [HTML](#html)
-2. [CSS](#css)
-3. [Javascript](#javascript)
-4. [C#](#c#)
-5. [Umbraco](#umbraco)
-6. [SQL](#sql)
-7. [Domain Urls](#domain-urls)
-8. [Email](#email)
-9. [Postman](#postman)
-10. [Logging](#logging)
-11. [Code Reviews](#code-reviews)
-12. [Continuous Integration](#continuous-integration)
-13. [Hosting](#hosting)
-14. [Tools](#tools)
-15. [Tracking](#tracking)
+1. [Prerequisites](#prerequisites)
+2. [HTML](#html)
+3. [CSS](#css)
+4. [Javascript](#javascript)
+5. [C#](#c#)
+6. [Umbraco](#umbraco)
+7. [SQL](#sql)
+8. [Domain Urls](#domain-urls)
+9. [Email](#email)
+10. [Postman](#postman)
+11. [Logging](#logging)
+12. [Code Reviews](#code-reviews)
+13. [Continuous Integration](#continuous-integration)
+14. [Hosting](#hosting)
+15. [Tools](#tools)
+16. [Tracking](#tracking)
+
+## Prerequisites
+
+* [Middleware Nuget Repo](https://sites.google.com/a/degree53.com/knowledge-base/technical/middleware/nuget-repository)  - Ensure you have the 'Middleware Nuget Repo' added to your instance of Visual Studio.
 
 ## HTML
 
@@ -49,22 +54,7 @@ We follow the Microsoft C# Coding and Naming Conventions. Take a look, and ADHER
 
 Generally we try to keep the same structure for all of our projects where possible. This ensures that if you need to switch projects, or start a new one, you can recognise what's going on more easily, and already be familiar with a project and work more efficiently.
 
-* New Projects
-    * Fork the template project. It is loaded with code samples of things we use regularly.
-    * LastPass - Make logins for different environments as soon as they are setup, even if they share the same password.
-* Ensure you have the [Middleware Nuget repo](https://sites.google.com/a/degree53.com/knowledge-base/technical/middleware/nuget-repository) added to your Visual Studio
-* [Editors Manual](https://our.umbraco.org/projects/website-utilities/umbraco-7-editors-manual/) - The Umbraco manual. Usually, this is a starting point to modify and customise for any clients. See a project manager for any sample/custom ones we have produced.
-* [Common Pitfalls](https://our.umbraco.org/documentation/Reference/Common-Pitfalls/) - The Umbraco docs are pretty good in general, this article is pretty good for some general tips and best practices.
-* Controllers - Use appropriately.
-    * [RenderViewController](https://our.umbraco.org/documentation/reference/routing/custom-controllers)
-    * [SurfaceController](https://our.umbraco.org/documentation/reference/routing/surface-controllers)
-    * [UmbracoApiController](https://our.umbraco.org/documentation/reference/routing/WebApi/)
-    * [UmbracoAuthorizedApiController](https://our.umbraco.org/documentation/reference/routing/Authorized/)
-* Custom Property Editors
-* Custom Grid Editors
-* Custom Sections
-    * [http://skrift.io/articles/archive/sections-and-trees-in-umbraco-7/](http://skrift.io/articles/archive/sections-and-trees-in-umbraco-7/)
-* [ORM](http://www.toptensoftware.com/petapoco/) - There is an ORM built into Umbraco, PetaPoco. Sometimes this may be easier than creating new tables and writing custom code for CRUD operations, but be aware of any performance hits.
+* [Umbraco](UMBRACO.md)
 
 ## SQL
 
@@ -88,7 +78,7 @@ Setting URL's is good practice. If we didn't do it, we'd have issues for example
 
 ## Email
 
-* Sendgrid - We have a Degree 53 account that you can use to send emails in your code using SendGrid. If not using sendgrid, you can either use smtp4dev locally.
+* Sendgrid - We have a Degree 53 account that you can use to send emails in your code using SendGrid. If not using sendgrid, you can use smtp4dev locally. *TBC*
 
 ## Postman
 
@@ -107,7 +97,7 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 
 ## Code Reviews
 
-* *WIP*
+* *TBC*
 
 ## Continuous Integration
 
