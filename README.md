@@ -24,6 +24,7 @@
 ## Prerequisites
 
 * [Middleware Nuget Repo](https://sites.google.com/a/degree53.com/knowledge-base/technical/middleware/nuget-repository)  - Ensure you have the 'Middleware Nuget Repo' added to your instance of Visual Studio.
+* Running in Administrator mode for projects - You may not wish too, and this fix helps - http://stackoverflow.com/questions/12859891/error-unable-to-access-the-iis-metabase
 
 ## HTML
 
@@ -71,7 +72,7 @@ For each database/site you are building a database for in Azure, [create an indi
 
 Setting URL's is good practice. If we didn't do it, we'd have issues for example if we were to migrate our sites to another hosting provider.
 
-* Setting urls for environments (See Warren for assistance if it's not possible to do yourself)
+* Setting url's for environments (See Warren for assistance if it's not possible to do yourself)
     * Dev - http://{sitename-lowercase-hyphenated}-dev.degree53.com
     * Test - http://{sitename-lowercase-hyphenated}-test.degree53.com
     * UAT - http://{sitename-lowercase-hyphenated}-uat.degree53.com
@@ -90,7 +91,7 @@ Setting URL's is good practice. If we didn't do it, we'd have issues for example
 * Log4Net
 
 ```
-private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
+private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMethod().DeclaringType);
 ```
 
 * [Diplo Trace Log Viewer](https://our.umbraco.org/projects/developer-tools/diplo-trace-log-viewer/) - Add this to your umbraco installation if it isn't there already (it should be in the template project), in order to view logs more easily! If you're unsure whether or not to add it, ask someone!
