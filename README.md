@@ -79,7 +79,8 @@ Setting URL's is good practice. If we didn't do it, we'd have issues for example
 
 ## Email
 
-* Sendgrid - We have a Degree 53 account that you can use to send emails in your code using SendGrid. If not using sendgrid, you can use smtp4dev locally. *TBC*
+* Sendgrid - We have a Degree 53 account that you can use to send emails in your code using SendGrid.
+* You can use smtp4dev locally to quickly fire off some emails and check things are working.
 
 ## Postman
 
