@@ -30,6 +30,7 @@
 
 * Semantics - We should be aware of the semantics, using elements appropriately. It's important, and there isn't any reason why we shouldn't know about them. Have a google yourself, below is an article that may be of us to you.
     * [https://codepen.io/mi-lee/post/an-overview-of-html5-semantics](https://codepen.io/mi-lee/post/an-overview-of-html5-semantics)
+    * [Google's Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) - Google Tool to test microdata.
 
 ## CSS
 
