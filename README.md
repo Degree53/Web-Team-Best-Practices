@@ -124,5 +124,6 @@ private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMe
 ## Tracking
 
 * Google Tag Manager - Ideally we should add Google Analytics via Google Tag Manager. It means, we only need to install GTM, and things can be added when required, without affecting development.
+    * [Quick Start Guide](https://developers.google.com/tag-manager/quickstart) - Tag Manager Code placement
     * https://support.google.com/analytics/answer/6164470
 * Google Analytics
