@@ -17,40 +17,80 @@
 
 ## Title and Description
 
-* *TBC*
+These title and description tags will often form the basis of the search result listings, so should also be created to entice users to click the result.
+
+* Every page needs a unique title and description.
+* All must be completely unique, with no duplicates.
+* Should be keyword rich.
 
 ## Canonical Links
 
-* *TBC*
+A canonical page is the preferred version of a set of pages with highly similar content.
+
+* Every page will need a canonical link tag adding.
+* Canonical link tags are case specific.  
+
+```
+<link rel="canonical" href="http://www.example.com/example-page" />
+```
 
 ## URL Structure
 
-* *TBC*
+* Needs to be kept simple for easy sharing.
+* Use of keywords within the URL structure.
 
 ## Duplicate Content
 
-* *TBC*
+* Ensure no duplicate pages are created on the site.
+* Ways of dealing with duplicate content
+    * 301 redirect into main page
+    * Canonical link tag
+    * Add noindex tag
+* Special pages for PPC should usually be noindex.
 
 ## Header Tags
 
-* *TBC*
+* Use Header tags appropriately. Lookup semantics, and you'll get a good idea of what and what not to use, where and when. Eg. h1, h2, h3, accordingly.
 
 ## Images
 
-* *TBC*
+* Images should be included in the page and not in the CSS where possible, to allow google to index them.
+* If you can't decide whether to put an image inline or in CSS, disable printing background images and go to print a page and see if the image will print. Things like logos, body content images should be visible.
+* This goes without saying, file sizes should be kept to a minimum to optimise download speed.
 
 ## Pagination
 
-* *TBC*
+* On pages that are sequential, such as blogs we need to add pagination code.
+
+```
+<link rel="prev" href="http://www.example.com/blog/page/1" />
+<link rel="next" href="http://www.example.com/blog/page/2" />
+```
 
 ## Sitemap
 
-* *TBC*
+* Every site needs a sitemap page adding.
+* This should be linked to from every page.
+* .Only needs to include key pages / sections.
 
 ## Authorship Tags
 
-* *TBC*
+* Article Page
+```
+<a rel="author" href="/advice/authors/Joe-Bloggs/">Joe Bloggs</a>
+```
+* Bio Page
+```
+<a rel="me" href="https://plus.google.com/117509091157300032892/">Joe Bloggs</a>
+```
 
 ## Microdata
 
-* *TBC*
+Microdata is a way to label specific content on a website for example reviews, personal information, telephone numbers, Company Address etc. 
+
+Micro data is often contained within a div or a span tag, e.g
+```
+My name is <span itemprop="name">Bob Smith</span>
+```
+
+There is a number of micro data tags that we could use across the different domains, we should try and keep them standardized and included in any future projects.
