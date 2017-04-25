@@ -32,6 +32,7 @@
 * Semantics - We should be aware of the semantics, using elements appropriately. It's important, and there isn't any reason why we shouldn't know about them. Have a google yourself, below is an article that may be of us to you.
     * [https://codepen.io/mi-lee/post/an-overview-of-html5-semantics](https://codepen.io/mi-lee/post/an-overview-of-html5-semantics)
     * [Google's Structured Data Testing Tool](https://search.google.com/structured-data/testing-tool) - Google Tool to test microdata.
+    * [SEO](SEO.md)
 
 ## CSS
 
@@ -69,10 +70,12 @@ For each database/site you are building a database for in Azure, [create an indi
     * Dev - {PascalCaseSitename}Dev
     * Test - {PascalCaseSitename}Test
     * UAT - {PascalCaseSitename}UAT
+    * Live/Production - {PascalCaseSitename}Prod
 
 ## Container Apps
 
-* IPV6 Checking *TBC*
+* IPV6 Checking
+    * [Apple - Supporting IPv6 DNS64/NAT64 Networks](https://developer.apple.com/library/content/documentation/NetworkingInternetWeb/Conceptual/NetworkingOverview/UnderstandingandPreparingfortheIPv6Transition/UnderstandingandPreparingfortheIPv6Transition.html)
 
 ## Domain Urls
 
