@@ -86,11 +86,11 @@ A canonical page is the preferred version of a set of pages with highly similar
 
 ## Microdata
 
-Microdata is a way to label specific content on a website for example reviews, personal information, telephone numbers, Company Address etc. 
+Microdata is a way to label specific content on a website for example reviews, personal information, telephone numbers, Company Address etc.
 
 Micro data is often contained within a div or a span tag, e.g
 ```
 My name is <span itemprop="name">Bob Smith</span>
 ```
 
-There is a number of micro data tags that we could use across the different domains, we should try and keep them standardized and included in any future projects.
+There is a number of micro data tags that we could use across the different domains, we should try and keep them standardized and included in any future projects.
