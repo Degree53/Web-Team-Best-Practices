@@ -72,6 +72,12 @@ For each database/site you are building a database for in Azure, [create an indi
     * UAT - {PascalCaseSitename}UAT
     * Live/Production - {PascalCaseSitename}Prod
 
+Most of the time you will probably be just fine using Umbraco's content service, or other means of displaying data, but there will be times when you need to directly work with the database, such as creating tables, views and stored procedures.
+
+Firstly, really plan what you are going to do. Think about the project, and why you want to do it a certain way. Document it. Get it checked by someone.
+
+Saving the scripts - *TBC*
+
 ## Container Apps
 
 * IPV6 Checking
