@@ -57,6 +57,12 @@ A canonical page is the preferred version of a set of pages with highly similar
 * Images should be included in the page and not in the CSS where possible, to allow google to index them.
 * If you can't decide whether to put an image inline or in CSS, disable printing background images and go to print a page and see if the image will print. Things like logos, body content images should be visible.
 * This goes without saying, file sizes should be kept to a minimum to optimise download speed.
+* Keep your Alt text and Image titles unique per each image.
+* Use no more than 7 words for Alt text.
+* Avoid keyword stuffing.
+* Make your images informative and detailed with important keywords.
+* Get good-quality images with a specified width and height for each one.
+* Google ranks sites for mobile, images need to be mobile compatible.
 
 ## Pagination
 
