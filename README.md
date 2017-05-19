@@ -11,6 +11,7 @@
 0. [C#](#c#)
 0. [Umbraco](#umbraco)
 0. [SQL](#sql)
+0. [Performance](#performance)
 0. [Container Apps](#container-apps)
 0. [Domain Urls](#domain-urls)
 0. [Email](#email)
@@ -77,6 +78,10 @@ Most of the time you will probably be just fine using Umbraco's content service,
 Firstly, really plan what you are going to do. Think about the project, and why you want to do it a certain way. Document it. Get it checked by someone.
 
 Saving the scripts - *TBC*
+
+## Performance
+
+* [Performance](PERFORMANCE.md)
 
 ## Container Apps
 
