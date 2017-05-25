@@ -39,6 +39,8 @@
 ## Custom Editors
 
 * Custom Property Editors
+    * [Creating a Property Editor](https://our.umbraco.org/documentation/tutorials/Creating-a-Property-Editor/)
+    * [Data Types](https://our.umbraco.org/forum/developers/extending-umbraco/46183-Creating-a-property-editor-in-Umbraco-7) - Use 'valueType: "JSON"' to avoid data size storing issues.
 * Custom Grid Editors
 
 ## Custom Sections
