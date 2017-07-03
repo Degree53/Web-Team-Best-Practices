@@ -18,7 +18,7 @@
 0. [Postman](#postman)
 0. [Logging](#logging)
 0. [Code Reviews](#code-reviews)
-0. [Continuous Integration](#continuous-integration)
+0. [Source Control and Continuous Integration](#source-control-and-continuous-integration)
 0. [Hosting](#hosting)
 0. [Tools](#tools)
 0. [Tracking](#tracking)
@@ -121,12 +121,13 @@ private static readonly ILog _log = LogManager.GetLogger(MethodBase.GetCurrentMe
 
 * *TBC*
 
-## Continuous Integration
+## Source Control and Continuous Integration
 
 * [Git Workflow](https://sites.google.com/a/degree53.com/knowledge-base/technical/front-end/git-workflow)
 * [TeamCity](https://sites.google.com/a/degree53.com/knowledge-base/technical/continous-integration/teamcity)
     * Errors - Read build log errors. They are your best friend when trying to resolve build issues.
     * Version Numbers
+        * For .Net projects, use TeamCity (via a prompt) to add version numbers to your project dll's, and use these version numbers to mark release branches. You don't need to change anything in your working project. Version numbers aren't checked in with your code.
     * Release Tags
 
 ## Hosting
