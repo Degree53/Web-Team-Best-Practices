@@ -105,7 +105,7 @@ Setting URL's is good practice. If we didn't do it, we'd have issues for example
 ## Postman
 
 * Shared Degree 53 Dev Account (*degreefiftythree.dev@gmail.com*, see LastPass)
-* There should be environament variables that you can use to switch between different environments, eg. {{dev}}, {{test}}, {{uat}}. Use these when adding any API calls.
+* There should be environment variables that you can use to switch between different environments, eg. {{dev}}, {{test}}, {{uat}}. Use these when adding any API calls.
 
 ## Logging
 
