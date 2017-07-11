@@ -14,6 +14,7 @@
 6. [Custom Sections](#custom-sections)
 7. [Logging](#logging)
 8. [Reading](#reading)
+9. [Performane](#performance)
 
 ## New Projects
 
@@ -62,3 +63,12 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 Useful articles, give these a read to make you aware of any features that can make your life easier and write better code.
 
 * [Common Pitfalls](https://our.umbraco.org/documentation/Reference/Common-Pitfalls/) - The Umbraco docs are pretty good in general, this article is pretty good for some general tips and best practices.
+
+## Performance
+
+* When running Umbraco on Azure, it works slightly differently to how it does locally. There are two parts, the file system, and the web worker. The web worker is what you actually connect to in your browser, and where the site is run from. The file system is where static files, indexes, etc. are loaded from and used. The web worker will occasionally be unloaded, and reloaded into a new web worker, which will cause the site to 'restart', causing it to reload the content cache again.
+    * Copy the content cache file to the web worker memory, in 'Config/umbracoSettings.config'.
+```
+<!-- Update in-memory cache if XML file is changed -->
+<XmlContentCheckForDiskChanges>True</XmlContentCheckForDiskChanges>
+```

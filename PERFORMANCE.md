@@ -4,10 +4,15 @@
 
 ## Table of Contents
 
-0. [Introduction](#introduction)
+0. [Azure](#azure)
+0. [Umbraco](#umbraco)
 
-## Introduction
+## Azure
+* This will improve the speed at which static files are served from the azure server. If this doesn't run locally, you can add it to your config transforms.
+    ```
+    <serverRuntime enabled="true" frequentHitThreshold="1" frequentHitTimePeriod="00:00:20" />
+    ```
 
-* Azure
-* Optimisations
-* TBC
+## Umbraco
+
+* [Umbraco Performance](UMBRACO.md#performance)
