@@ -10,8 +10,13 @@
 ## Azure
 * This will improve the speed at which static files are served from the azure server. If this doesn't run locally, you can add it to your config transforms.
     ```
+    <system.webServer>
     <serverRuntime enabled="true" frequentHitThreshold="1" frequentHitTimePeriod="00:00:20" />
+    ...
+    </system.webServer>
     ```
+
+* Enable the 'Always On' setting. This can be found in Application Settings in the App Service settings. This will prevent the site from 'going to sleep', acting as a keep alive function.
 
 ## Umbraco
 

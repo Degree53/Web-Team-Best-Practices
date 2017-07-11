@@ -14,7 +14,7 @@
 6. [Custom Sections](#custom-sections)
 7. [Logging](#logging)
 8. [Reading](#reading)
-9. [Performane](#performance)
+9. [Performance](#performance)
 
 ## New Projects
 
