@@ -53,7 +53,7 @@ We follow the Microsoft C# Coding and Naming Conventions. Take a look, and ADHER
 
 * [Coding Conventions](https://msdn.microsoft.com/en-gb/library/ff926074.aspx)
 * [Naming Conventions](https://msdn.microsoft.com/en-us/library/ms229045(v=vs.110).aspx)
-* Version Numbers - *TBC*
+* Version Numbers - Use TeamCity (via a prompt) to add version numbers to your project dll's, and use these version numbers to mark release branches. You don't need to change anything in your working project. Version numbers aren't checked in with your code.
 
 ## Umbraco
 
