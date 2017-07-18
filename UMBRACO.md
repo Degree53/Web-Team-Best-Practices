@@ -63,6 +63,7 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 Useful articles, give these a read to make you aware of any features that can make your life easier and write better code.
 
 * [Common Pitfalls](https://our.umbraco.org/documentation/Reference/Common-Pitfalls/) - The Umbraco docs are pretty good in general, this article is pretty good for some general tips and best practices.
+* [Official Umbraco C# API documentation](https://our.umbraco.org/apidocs/csharp/)
 
 ## Performance
 
