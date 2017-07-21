@@ -1,6 +1,6 @@
 # SQL
 
-*The following is a run down of best practices to use when working with SQL databases in the web team.
+*The following is a run down of best practices to use when working with SQL databases in the web team.*
 
 *Generally we try to keep the same structure for all of our projects where possible. This ensures that if you need to switch projects, or start a new one, you can recognise what's going on more easily, and already be familiar with a project and work more efficiently.*
 

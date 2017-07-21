@@ -5,6 +5,7 @@
 ## Table of Contents
 
 0. [Azure](#azure)
+0. [Web.config](#web-config)
 0. [Umbraco](#umbraco)
 
 ## Azure
@@ -17,6 +18,12 @@
     ```
 
 * Enable the 'Always On' setting. This can be found in Application Settings in the App Service settings. This will prevent the site from 'going to sleep', acting as a keep alive function.
+
+## Web Config
+
+Take a look at these boilerplates for web.config's. They include GZip, security and rewrite settings as well as others.
+
+* [https://github.com/h5bp/server-configs-iis](https://github.com/h5bp/server-configs-iis)
 
 ## Umbraco
 
