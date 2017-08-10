@@ -7,14 +7,15 @@
 ## Table of Contents
 
 1. [New Projects](#new-projects)
-2. [Editors Manual](#editors-manual)
-3. [Controllers](#controllers)
-4. [Data Access](#data-access)
-5. [Custom Editors](#custom-editors)
-6. [Custom Sections](#custom-sections)
-7. [Logging](#logging)
-8. [Reading](#reading)
-9. [Performance](#performance)
+1. [Editors Manual](#editors-manual)
+1. [Controllers](#controllers)
+1. [Data Access](#data-access)
+1. [Custom Editors](#custom-editors)
+1. [Custom Sections](#custom-sections)
+1. [Logging](#logging)
+1. [Debugging](#debugging)
+1. [Reading](#reading)
+1. [Performance](#performance)
 
 ## New Projects
 
@@ -58,12 +59,21 @@ private static readonly ILog Log = LogManager.GetLogger(MethodBase.GetCurrentMet
 
 * [Diplo Trace Log Viewer](https://our.umbraco.org/projects/developer-tools/diplo-trace-log-viewer/) - Add this to your umbraco installation if it isn't there already (it should be in the template project), in order to view logs more easily! If you're unsure whether or not to add it, ask someone!
 
+## Debugging
+
+Add this to any URL to get a stack trace in your browser. It'll also tell you where bottlenecks are, and even SQL queries that are slowing things down.
+
+```
+?umbDebug=true&umbDebugShowTrace=true
+```
+
 ## Reading
 
 Useful articles, give these a read to make you aware of any features that can make your life easier and write better code.
 
 * [Common Pitfalls](https://our.umbraco.org/documentation/Reference/Common-Pitfalls/) - The Umbraco docs are pretty good in general, this article is pretty good for some general tips and best practices.
 * [Official Umbraco C# API documentation](https://our.umbraco.org/apidocs/csharp/)
+* [Running Umbraco on Azure Web Apps](https://our.umbraco.org/documentation/Getting-Started/Setup/Server-Setup/azure-web-apps)
 
 ## Performance
 
