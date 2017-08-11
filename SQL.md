@@ -17,3 +17,16 @@ Most of the time you will probably be just fine using Umbraco's content service,
 Firstly, really plan what you are going to do. Think about the project, and why you want to do it a certain way. Document it. Get it checked by someone.
 
 Saving the scripts - *TBC*
+
+## Drop a database
+```
+DROP DATABASE FootballAccaTest
+GO
+```
+
+## Copy a database
+```
+CREATE DATABASE DestinationDatabaseName
+     AS COPY OF [SourceDatabaseName]
+GO
+```
