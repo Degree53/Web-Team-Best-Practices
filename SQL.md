@@ -4,6 +4,12 @@
 
 *Generally we try to keep the same structure for all of our projects where possible. This ensures that if you need to switch projects, or start a new one, you can recognise what's going on more easily, and already be familiar with a project and work more efficiently.*
 
+## Local DB
+
+To install a local instance of SQL Server, install [SQL Server Express Edition](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+
+## Azure
+
 For each database/site you are building a database for in Azure, [create an individual account with the required permissions](https://sites.google.com/a/degree53.com/knowledge-base/it-helpdesk/sql-azure). Do NOT use the master account to connect to the database, either for the website, or in SQL Server Management Studio. Too much can go wrong.
 
 * Naming Conventions for DB's
