@@ -36,3 +36,7 @@ CREATE DATABASE DestinationDatabaseName
      AS COPY OF [SourceDatabaseName]
 GO
 ```
+
+## Exporting Databases
+
+If you need to convert an SDF DB file to a SQL server DB, use CompactView and export the DB, then run the script in the newly created one.
