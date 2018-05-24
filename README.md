@@ -90,7 +90,7 @@ SSL is generally a pain to setup because we always forget how to. Where possible
 
 The [Digicert Utility](https://www.digicert.com/util/) can help to create CSR's (Certificate Requests), where IIS can struggle (eg. empty fields).
 
-    * [GoDaddy SSL to Azure App Service](https://medium.com/@joshyates1980/apply-ssl-t0-azure-web-application-8cc72d886993)
+* [GoDaddy SSL to Azure App Service](https://medium.com/@joshyates1980/apply-ssl-t0-azure-web-application-8cc72d886993)
 
 ## Email
 
