@@ -14,6 +14,7 @@
 0. [Performance](#performance)
 0. [Container Apps](#container-apps)
 0. [Domain Urls](#domain-urls)
+0. [SSL](#ssl)
 0. [Email](#email)
 0. [Postman](#postman)
 0. [Logging](#logging)
@@ -82,6 +83,14 @@ Setting URL's is good practice. If we didn't do it, we'd have issues for example
     * Dev - http://{sitename-lowercase-hyphenated}-dev.degree53.com
     * Test - http://{sitename-lowercase-hyphenated}-test.degree53.com
     * UAT - http://{sitename-lowercase-hyphenated}-uat.degree53.com
+
+## SSL
+
+SSL is generally a pain to setup because we always forget how to. Where possible, and using App Services, get clients to buy the certificates from within Azure, it'll make life easier.
+
+The [Digicert Utility](https://www.digicert.com/util/) can help to create CSR's (Certificate Requests), where IIS can struggle (eg. empty fields).
+
+    * [GoDaddy SSL to Azure App Service](https://medium.com/@joshyates1980/apply-ssl-t0-azure-web-application-8cc72d886993)
 
 ## Email
 
