@@ -40,3 +40,5 @@ GO
 ## Exporting Databases
 
 If you need to convert an SDF DB file to a SQL server DB, use CompactView and export the DB, then run the script in the newly created one.
+
+The [Migration Wizard](https://github.com/adragoset/SQLAzureMigration) tool is still the best in my opinion, however it appears to have been superceded by the [Data Migration Assistant](https://docs.microsoft.com/en-us/sql/dma/dma-overview?view=sql-server-2017).
