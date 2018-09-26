@@ -4,6 +4,8 @@
 
 *Generally we try to keep the same structure for all of our projects where possible. This ensures that if you need to switch projects, or start a new one, you can recognise what's going on more easily, and already be familiar with a project and work more efficiently.*
 
+Read the new Project section to begin with.
+
 ## Table of Contents
 
 1. [New Projects](#new-projects)
@@ -21,6 +23,7 @@
 
 * Fork the template project (*TBC*). It is loaded with code samples of things we use regularly.
 * LastPass - Make logins for different environments as soon as they are setup, even if they share the same password.
+* [Running Umbraco on Azure Web Apps](https://our.umbraco.com/documentation/Getting-Started/Setup/Server-Setup/azure-web-apps)
 
 ## Editors Manual
 
