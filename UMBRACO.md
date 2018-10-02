@@ -18,6 +18,7 @@ Read the new Project section to begin with.
 1. [Debugging](#debugging)
 1. [Reading](#reading)
 1. [Performance](#performance)
+1. [Patches](#patches)
 
 ## New Projects
 
@@ -86,3 +87,6 @@ Useful articles, give these a read to make you aware of any features that can ma
 <!-- Update in-memory cache if XML file is changed -->
 <XmlContentCheckForDiskChanges>True</XmlContentCheckForDiskChanges>
 ```
+## Patches
+
+* [Security Patch](https://umbraco.com/blog/security-advisory-security-patch-ready-on-the-20th-of-september/)
