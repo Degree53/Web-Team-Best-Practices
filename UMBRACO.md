@@ -19,6 +19,7 @@ Read the new Project section to begin with.
 1. [Reading](#reading)
 1. [Performance](#performance)
 1. [Patches](#patches)
+1. [Release Checklist](#release-checklist)
 
 ## New Projects
 
@@ -90,3 +91,14 @@ Useful articles, give these a read to make you aware of any features that can ma
 ## Patches
 
 * [Security Patch](https://umbraco.com/blog/security-advisory-security-patch-ready-on-the-20th-of-september/)
+
+## Release Checklist
+
+things to look out for when upgrading Umbraco, or doing a large release. These things are often overlooked, so keep a lookout.
+
+* Umbraco Forms - Need to include files from the TEMP folder (where strangley data is kept), json files in plugin folder.
+* Configs - These include things like Dashboard (which can affect what you see in the backoffice), performance settings, etc.
+* If upgrading, content pickers can change, and no longer work, often requireing code changes in views.
+* Use deplyment slots for big upgrades - don't forget to copy media, form files, licenses, etc. Azure will handle SSL, custom domains, etc.
+    * Test the newly swapped in site, with the old one if using multiple databases to check that everything has copied over ok.
+* Rebuild caches pre-emptively in the backoffice.
