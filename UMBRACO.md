@@ -92,13 +92,43 @@ Useful articles, give these a read to make you aware of any features that can ma
 
 * [Security Patch](https://umbraco.com/blog/security-advisory-security-patch-ready-on-the-20th-of-september/)
 
+## Load Balanced Setup
+
+* Follow the steps outlined here:
+	* [Common load balancing setup information] (https://our.umbraco.com/documentation/getting-started/setup/server-setup/load-balancing/#common-load-balancing-setup-information)
+	* [Examine Directory Factory Options] (https://our.umbraco.com/documentation/getting-started/setup/server-setup/load-balancing/file-system-replication#examine-directory-factory-options)
+	* [Explicit Master Scheduling Server] (https://our.umbraco.com/documentation/getting-started/setup/server-setup/load-balancing/flexible-advanced#explicit-master-scheduling-server)
+* Add app setting for load balancing role
+* Set server registrar on application start based on load balancing role
+* Install UmbracoFileSystemProviders package for storing media in Azure blob storage
+* Release config for FileSystemProviders with storage account connection string
+* Setup a new Azure app service to host the master Umbraco instance
+* Redirect rule for master Umbraco site with the following exclusions:
+	*umbraco
+	*umbraco/api
+	*umbraco/backoffice
+	*umbraco/restservices
+* Clear indexes (including any write.lock files) from slave server (may require app service to be stopped)
+
+## Scheduled Publishing
+
+* Ensure security protocol type is set to TLS12 on application start
+* Ensure there is no redirect affecting `umbraco/restservices` (required for background tasks such as scheduled publishing)
+
 ## Release Checklist
 
-things to look out for when upgrading Umbraco, or doing a large release. These things are often overlooked, so keep a lookout.
+Things to look out for when upgrading Umbraco, or doing a large release. These things are often overlooked, so keep a lookout.
 
-* Umbraco Forms - Need to include files from the TEMP folder (where strangley data is kept), json files in plugin folder.
+* Umbraco Forms
+	* Copy Data folder in UmbracoForms plugin folder
+	* Ensure UmbracoForms license files are included in the solution and are set to copy to the bin
+* Copy media folder
+* Import SQL changes with uSync
+* Rebuild Examine indexes
+* Regenerate models
+* Clear App_Data/TEMP/ClientDependency folder
+
 * Configs - These include things like Dashboard (which can affect what you see in the backoffice), performance settings, etc.
-* If upgrading, content pickers can change, and no longer work, often requireing code changes in views.
-* Use deplyment slots for big upgrades - don't forget to copy media, form files, licenses, etc. Azure will handle SSL, custom domains, etc.
+* If upgrading, content pickers can change, and no longer work, often requiring code changes in views.
+* Use deployment slots for big upgrades - don't forget to copy media, form files, licenses, etc. Azure will handle SSL, custom domains, etc.
     * Test the newly swapped in site, with the old one if using multiple databases to check that everything has copied over ok.
-* Rebuild caches pre-emptively in the backoffice.
